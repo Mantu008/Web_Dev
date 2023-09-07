@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaddows</title>
+    <style>
+
+        :root{
+            --primary-color:brown;
+            --custom-width:330px;
+        }
+
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            background-color: aqua;
+            width: 330px;
+            /* width:var(--custom-width);      //custom width */
+            height: 330px;
+            border: 1 px solid brown;
+            margin: 5px;
+            padding: 5px;
+ 
+              /* using of diff diff  box-shaddows */
+
+            /* box-shadow: 20px 20px brown; */
+
+             /* box-shadow: 20px 20px 50px  brown; */
+
+             box-shadow: 20px 20px 50px 40px rgb(42, 128, 165);
+
+             /* box-shadow:inset 10px 15px ; */
+
+             /* box-shadow: 20px 10px var(--primary-color) , 10px 12px blue , 20px 25px green; */
+ 
+
+        }
+
+        #head1{
+            text-shadow: 5px 3px 1px white;
+
+             /* text-shadow: yellow 5px 3px 1px ;    //this is same as upper define text-shadow only diff is colour is define first..*/
+
+             /* text-shadow: white 12px 13px; */
+
+             /* text-shadow: 12px 13px ; */
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box">
+            <img src="logo.jpg" alt="">
+            <h2 id="head1">Hey i am mantu kumar morya</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga ipsa adipisci aperiam tempora cumque soluta asperiores deserunt enim unde culpa.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

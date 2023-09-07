@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+ 
+    <h4 id="hedding-tags">hedding tags</h4>
+
+    <h1 style="background-color: aqua;">this is my first hedding</h1>
+    <h2 style="background-color: bisque;">this is my second hedding</h2>
+    <h3>this is my third hedding</h3>
+    <h4>this is my forth hedding</h4>
+    <h5>this is my fifth hedding</h5>
+    <h6>this is my sixth hedding</h6>
+
+    <h4>paragraph tag</h4>
+
+    <p>this is a paragraph</p>
+
+    <h4>anchor tag</h4>
+
+    <h4>1.for brousering</h4>
+
+    <a href="https://www.facebook.com">Facebook</a>
+
+     <h4>2.for Email</h4>
+
+    <br>
+    
+    <a href="mailto:mantukumar87586299@gmail.com">Email </a></body></li>
+
+   <h4>3.for calling</h4>
+
+    <br>
+    
+    <a href="tel:+9649486218">Phone</a></li>
+
+
+    <h4>list</h4>
+
+    <h4>1.unorderd list</h4>
+
+     <!-- it is not required to ordring in this work -->
+
+    <ul>
+        <li>Maggi</li>
+        <li>Kurkure</li>
+        <li>Chai</li>
+        <!-- [<dd> </dd> it is use for discription] -->
+        <dd>you are chose anyone for eating</dd>
+    </ul>
+
+    <h4>2.orderd list</h4>
+
+     <!-- it is required to ordring in making and drinking tea -->
+
+    <ol>
+    <li>bolling water</li>
+    <li>add milk</li>
+    <li>add milk</li>
+    <!-- [<dd> </dd> it is use for discription] -->
+    <dd>now your tea is ready for drinking</dd>
+    
+     </ol>
+
+
+     <h4>3.discription list</h4>
+
+    <dl>
+        <dt>Firefox</dt>
+        <dt>MOzilla</dt>
+        <dt>Fx</dt>
+
+    <!-- [<dd> </dd> it is use for discription] -->
+
+        <dd>
+            A free, open source, cross-platform, graphical web browser developed by the
+            Mozilla Corporation and hundreds of volunteers.
+          </dd>
+        
+    </dl>    
+
+    <h4>table tag</h4>
+
+    <table>
+      
+        <tr>
+         <td>sr no</td>
+         <td>name</td>
+         <td>id</td>
+        </tr>        
+
+
+       <tr>
+        <td>1</td>
+        <td>mantu</td>
+        <td>001</td>
+       </tr>
+
+       <tr>
+        <td>2</td>
+        <td>ashish</td>
+        <td>002</td>
+       </tr>
+
+       <tr>
+        <td>3</td>
+        <td>hari</td>
+        <td>003</td>
+       </tr>
+
+       <tr>
+        <td>4</td>
+        <td>yuvraj</td>
+        <td>004</td>
+       </tr>
+
+    </table>
+
+    <h4 id="image-tag">image tag</h4>
+
+    <img src="data:image/png;base64,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" alt="web devloper">
+  
+    <br>
+
+
+    <a href="#hedding-tags">Jump to hedding section</a><br>
+
+    <a href="#image-tag">go to image tag part</a><br>
+
+
+
+    <h4>formating tag</h4>
+
+    <p>Lorem ipsum <strong>dolor</strong> sit amet consectetur adipisicing elit. Inventore dolor sed sequi vel. Quam dolores repellendus exercitationem ex praesentium officia, fugiat at placeat error perferendis. Enim repellendus et animi expedita corporis, veritatis necessitatibus. Quod reprehenderit, quia ullam officia iure tempora! Maxime consequatur a dicta quia quod corrupti nobis sunt, obcaecati omnis cumque mollitia quae molestias cupiditate! Fuga praesentium rem fugiat. Nam amet odio earum mollitia, maiores sit ipsa sunt aliquam.</p>
+  
+
+
+     <h4>bold tag</h4>
+    <b style="background-color: blue;">mantu</b> <br>
+
+    <h4>italic tag</h4>
+    <i style="background-color: aquamarine;">mantu</i><br>
+
+    <h4>strong tag</h4>
+    <strong style="background-color: azure;">mantu</strong><br>
+
+    <h4>emphicige tag</h4>
+    <em style="background-color: rgb(29, 36, 123);">mantu</em><br>
+
+    <h4>strick tag</h4>
+    <s style="background-color: aquamarine;">mantu</s><br>
+
+    <h4>underline tag</h4>
+    <u>mantu</u>
+
+    <h4>superspace tag</h4>
+    <p>
+       2 <sup>5</sup>
+    </p>
+
+    <h4>subspace tag</h4>
+
+    <p>
+       o<sub>2</sub>
+    </p>
+
+    <h4>brake tag</h4>
+
+    <p>i am mantu kumar morya <br>
+    from bhathawa parasuram</p>
+
+    <h4>pre tag</h4>
+    <pre>
+        i am mantu kumar morya
+        bhathawa parasuram
+        kuchaikot
+        gopalganj
+        (bihar)
+    </pre>
+
+
+
+
+
+    <h4>structure tag</h4>
+
+
+    <h4>1.article</h4>
+
+    <article>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-q1kal3kDoDk-KjXRvi4NSJkC88Sai7lUg&usqp=CAU" alt="computer">
+        <h2>computer</h2>
+        <p>
+            A computer is a machine that can be programmed to carry out sequences of arithmetic or logical operations (computation) automatically. Modern digital electronic computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks. A computer system is a nominally complete computer that includes the hardware, operating system (main software), and peripheral equipment needed and used for full operation. This term may also refer to a group of computers that are linked and function together, such as a computer network or computer cluster.
+        </p>
+
+        <h3>this is edited by mantu kumar morya </br>
+           at 09/07/2023  12:41
+        </h3>
+
+    </article>
+
+    <h4>2.section tag</h4>
+
+    <section>
+        <h2>image</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/ENIAC-changing_a_tube.jpg/1024px-ENIAC-changing_a_tube.jpg" alt="old computer">
+    </section>
+   
+    <section>
+        <h2>About Us</h2>
+        <p>
+            Computers and computing devices from different eras – clockwise from top left: Early vacuum tube computer (ENIAC) Mainframe computer (IBM System 360) Desktop computer (IBM ThinkCentre S50 with monitor) Supercomputer (IBM Summit) Video game console (Nintendo GameCube) Smartphone (LYF Water 2)
+        </p>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <a href="mailto:mantukumar87586299@gmail.com">Send Email to mantukumar87586299@gmail.com</a>
+    </section>
+
+    <section>
+        <h2>Services</h2>
+        <p>
+            "U.S. Army Photo", from M. Weik, "The ENIAC Story" A technician changes a tube. Caption reads "Replacing a bad tube meant checking among ENIAC's 19,000 possibilities." Center: Glenn A. Beck  
+        </p>
+    </section>
+
+
+    <section>
+        <h2>Copyright</h2>
+            <h3>THIS PAGE IS CREATED BY MANTU KUMAR MORYA IN 2023</h3>
+    </section>
+
+
+
+    <h4>creating id</h4>
+    <h3 id="mantu"></h3>
+
+    <h4>creating class</h4>
+    <h3 class="ashish"></h3>
+
+</div>
+
+
+<h4>block and inline element</h4>
+
+
+<div class="container"><section>
+    <li>mantu</li>
+    <li>asish</li>
+    <li>hari</li>
+</section></div>
+
+
+<div style="background-color: aquamarine;">my name is mantu kumar maurya</div>
+<span style=" background-color: blueviolet;">this is my span tag</span><br>
+
+<h4>nevigarion tag</h4>
+<nav>
+    <li><a href="">HOME</a></li>
+    <li><a href="">PROFILE</a></li>
+    <li><a href="">ABOUT</a></li>
+    <li><a href="">LOGIN</a></li>
+</nav>
+
+<h4>creating table 1.</h4>
+
+<table border="1">
+    <thead>
+        <th>Student_id</th>
+        <th>Student_name</th>
+        <th>Gender</th>
+        <th>Age</th>
+    </thead>
+
+    <tbody>
+         <tr>
+            <td>001</td>
+            <td>mantu</td>
+            <td>male</td>
+            <td>18</td>
+         </tr>
+
+         <tr>
+            <td>002</td>
+            <td>ashish</td>
+            <td>male</td>
+            <td>19</td>
+         </tr>
+
+         <tr>
+        <td>003</td>
+        <td>hari</td>
+        <td>male</td>
+        <td>22</td>
+         </tr>
+
+         <tr>
+            <td>004</td>
+        <td>nidhi</td>
+        <td>female</td>
+        <td>19</td>
+         </tr>
+
+    <!-- we use rowspan for extending row and use columnspace for extendinf column -->
+
+</table>
+
+<h4>creating another table 2.</h4>
+<table border="1">
+    <tr>
+        <td>Column 1</td>
+        <td>Column 2</td>
+        <td>Column 3</td>
+    </tr>
+    <tr>
+        <td rowspan="2">row 1 cell 1</td>
+        <td>row 1 cell 2</td>
+        <td>row 1 cell 3</td>
+    </tr>
+    <tr>
+        <td>row 2 cell 2</td>
+        <td>row 2 cell 3</td>
+    </tr>
+    <tr>
+        <td colspan="3">row 3 cell 1</td>
+    </tr>
+</table>
+
+<h4>another table 3.</h4>
+
+
+ <table border="1">
+         <thead>
+            <th>No.</th>
+            <th>Full name</th>
+            <th>Position</th>
+            <th>salary</th>
+            <th>Type</th>
+         </thead>
+
+         <tbody>
+            
+            <tr>
+            <td>01</td>
+            <td>mantu kumar</td>
+            <td>jhasa founder</td>
+            <td>10000$</td>
+            <td rowspan="4">compny founder</td>
+            </tr>
+
+             <tr>
+                <td>02</td>
+                <td>ashish</td>
+                <td>pasa founder</td>
+                <td>12000$</td>
+             </tr>
+
+             <tr>
+                <td>03</td>
+                <td>hari</td>
+                <td>basa founder</td>
+                <td>11000$</td>
+             </tr>
+
+             <tr>
+                <td>04</td>
+               <td>nidhi</td>
+               <td>kasa founder</td>
+               <td>13000$</td>
+             </tr>
+         </tbody>
+
+         <tfoot>
+            <tr>
+                <td colspan="3">total expances</td>
+                <td>46000$</td>
+            </tr>
+         </tfoot>
+
+ </table>
+
+ <h4> another table 4.</h4>
+
+            <table border="1">
+                <thead style="background-color: gray;">
+                    <th>Country </th>
+                    <th>State</th>
+                    <th>City</th>
+                    <th>Street</th>
+                    <th>Male</th>
+                    <th>Female</th>
+                    <th>Others</th>
+                </thead>
+                   <tr>
+                    <td rowspan="8">1</td>
+                    <td rowspan="4">Kerla</td>
+                    <td rowspan="2">Cochin</td>
+                    <td>New Street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>6</td>
+                   </tr>
+
+                   <tr>
+                    <td>Main Street</td>
+                    <td>300</td>
+                    <td>288</td>
+                    <td>2</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">Trivandrum</td>
+                    <td>Guru Street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>10</td>
+                   </tr>
+
+                   <tr>
+                    <td>TVK Street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>2</td>
+                   </tr>
+
+                   <td rowspan="4">Maharastra</td>
+                    <td rowspan="2">Mumbai</td>
+                    <td>Krisha Street</td>
+                    <td>700</td>
+                    <td>850</td>
+                    <td>1</td>
+                   </tr>
+
+                   <tr>
+                    <td>Main Street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>2</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">Surath</td>
+                    <td>New Street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>4</td>
+                   </tr>
+
+                   <tr>
+                    <td>Billa Street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>2</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">2</td>
+                    <td rowspan="2">Alaska</td>
+                    <td rowspan="2">AKA Central</td>
+                    <td>New Street</td>
+                    <td>200</td>
+                    <td>210</td>
+                    <td>2</td>
+                  </tr>
+
+                  <tr>
+                    <td>Cross Stre</td>
+                    <td>1000</td>
+                    <td>1050</td>
+                    <td>10</td>
+                  </tr>
+
+
+                <tbody>
+
+                </tbody>
+            </table>
+
+
+<h4>creating another table 5.</h4>
+
+  <table border="1">
+
+    <thead style="text-align: center;background-color: gray;">
+        <th rowspan="3">Day</th>
+        <th colspan="3">Seminar</th>
+
+        <tr>
+            <td colspan="2">Sehudule</td>
+            <td rowspan="2">Topic</td>  
+        </tr>
+
+        <tr>
+            <td>Begin</td>
+            <td>End</td>
+        </tr>
+
+    </thead>
+
+    <tbody style="text-align: center;">
+       
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 AM</td>
+            <td rowspan="2">5:00 PM</td>
+            <td row rowspan="1">Introduction to Xml</td>
+        </tr>
+        <tr>
+          <td row rowspan="1">Validity DTD and Relax Ng</td>
+         </tr>
+
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 AM</td>
+            <td>11:00 AM</td>
+            <td >XPath</td>
+        </tr>
+
+        <tr">
+            <td>11:00 AM</td>
+            <td>2:00 PM</td>
+            <td >XSL Transfromations</td>
+         
+        </tr>
+
+        <tr>
+            <td>2:00 PM</td>
+            <td>5:00 PM</td>
+            <td >XPath</td>
+
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 AM</td>
+            <td>12:00 PM</td>
+            <td>XLS Forming Objects</td>
+        </tr>
+
+        
+    </tbody>
+  </table>
+
+          
+
+
+
+
+   
+</body>
+</html>

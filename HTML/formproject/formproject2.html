@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+             border: 3px solid black;
+             width: 20%;
+             margin: 50px;
+             padding: 100px;
+             display: flex;
+             position: absolute;
+             top: 50px;
+             left:25%;
+             right: 25px;
+             background-color:aqua;
+            
+             
+        }
+        #box2{
+             margin: 5px;
+             padding: 5px;
+             width: 50%;
+             text-align: start;
+             font-size:larger ; 
+             font-weight: 1000; 
+        }
+    </style>
+</head>
+<body>
+
+       <div id="box">
+        <form id="box2">
+        
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" required placeholder="Enter your name"><br>
+    
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="name" required placeholder="Enter email"><br>
+    
+            <label for="phon">Phon</label><br>
+            <input type="tel" name="phon" id="phon" required placeholder="Enter phon"><br>
+    
+            <label for="resume">Resume:</label><br>
+            <input type="file" name="resume" id="resume" required><br>
+    
+            <label for="exprience">Exprience(Year)</label><br>
+            <input type="number">
+    
+            <fieldset aria-required="true">
+                <legend>Skils:</legend>
+                <input type="checkbox" name="checkbox1" id="checkbox1"><br>
+                <label for="checkbox1">HTML</label><br>
+                <input type="checkbox" name="checkbox2" id="checkbox2"><br>
+                <label for="checkbox2">CSS</label><br>
+                <input type="checkbox" name="checkbox3" id="checkbox3"><br>
+                <label for="checkbox3">JavaScript</label><br>
+            </fieldset>
+    
+            <label for="education">Higest Education</label><br>
+            <select name="education" id="education" required>
+    
+                <option value="High School">High School</option>
+                <option value="Intermideat">Intermideat</option>
+                <option value="UG">UG</option>
+                <option value="PG">PG</option>
+                <option value="PHD">PHD</option>
+                
+            </select>
+            <br>
+    
+            
+           
+             <fieldset>
+                <legend>Abaliablity:</legend>
+                <input type="radio" name="abaliablity" id="fulltime" checked><br>
+                <label for="fulltime">Full-time</label><br>
+                <input type="radio" name="abaliablity" id="parttime"><br>
+                <label for="parttime">Part-time</label><br>
+             </fieldset>
+    
+            <label for="comments">Additional Comments:</label><br>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter Somthing"></textarea>
+    
+            <input type="submit" value="submit">
+    
+            
+    
+    
+    
+            
+            
+    
+    
+    
+    
+    
+        </form>
+       </div>
+    
+</body>
+</html>

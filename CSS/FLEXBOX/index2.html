@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            .contaner{
+                background-color: beige;
+                border: 5px solid black;
+                margin: 2px;
+                padding: 2px;
+                height: 800px;
+
+                /* it is use to arrange item inside flex */
+                display: flex;
+                
+                /* it is use to handle overflow content */
+                overflow: hidden;
+
+                /* it is use to give direction to placing item */
+                flex-direction: row;
+
+                /* it is use to chenge their position dynamicly */
+                flex-wrap: nowrap;
+
+                /* it is use to cente element varticle and horizantle both */
+                /* justify-content:start;     
+                align-items: start; */
+
+
+                /* it is use to placing item to given position */
+                justify-content:start;
+
+                /* it is use to aligning item to given position */
+                align-items: start;
+
+                /* it is use to decrise spacing btw items  */
+                  align-content: center;           
+
+                
+            }
+
+            .box{
+               height: 200px;
+               width: 200px;
+               border: 2px solid brown;
+               margin: 2px;
+               padding: 2px;
+               
+           }
+
+    #box1{
+        background-color: aqua;
+        font-size: 50px;
+        /* flex-shrink: 4;
+           order: 500;
+        flex-grow: 5; */
+
+        align-self: center;
+    }
+    #box2{
+        background-color: blue;
+        font-size: 50px;
+        /* flex-grow: 1; */
+
+        align-self: start;
+    }
+    #box3{
+        background-color: orange;
+        font-size: 50px;
+        /* flex-grow: 1; */
+
+        align-self: end;
+    }
+    #box4{
+        background-color: brown;
+        font-size: 50px;
+
+        /* itis use to growing and sr=hrinking any flex-element */
+        /* flex-grow: 1;
+        order: -1; */
+
+        /* it is use to set dimention to any flex-item
+        flex-basis: 400px; */
+
+        align-self: center;
+       
+    }
+    </style>
+</head>
+<body>
+
+
+    <div class="contaner">
+        <div class="box" id="box1">BOX 1</div>
+        <div class="box" id="box2">BOX 2</div>
+        <div class="box" id="box3">BOX 3</div>
+        <div class="box" id="box4">BOX 4</div>
+    </div>
+    
+</body>
+</html>

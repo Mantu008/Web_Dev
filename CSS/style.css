@@ -1,0 +1,15 @@
+h3{
+    text-align: center;
+    background-color: rgb(100, 128, 0);
+    font-size: smaller;
+}
+
+h1{
+    text-align: center;
+    background-color: whitesmoke ;
+}
+
+p{
+     color: black;
+     background-color: red;
+}

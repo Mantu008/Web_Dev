@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{   
+
+        border: 10px solid black;
+        background-color: beige;
+        margin: 2px;
+        padding: 2px;
+        display: flex;
+       
+       
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        border: 2px solid brown;
+        margin: 2px;
+        padding: 2px;
+        display: flex;
+      
+    }
+
+    #box1{
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-weight: 200;
+       
+    }
+    #box2{
+        background-color: blue;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-weight: 200;
+    }
+    #box3{
+        background-color: orange;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-weight: 200;
+    }
+    #box4{
+        background-color: brown;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-weight: 200;
+    }
+
+    @media (min-width:1200px){
+        .container{
+           flex-direction: row;
+        }
+    }
+
+    @media (max-width:1200px){
+        .container{
+           flex-direction:column;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    
+
+       <div class="container">
+
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+    
+
+       </div>
+
+
+</body>
+</html>

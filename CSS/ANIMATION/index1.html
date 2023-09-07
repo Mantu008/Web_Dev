@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+                 
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 3px solid black;
+        }
+
+
+
+        .box1{
+
+             /* using simple atribut */
+
+              background-color:cadetblue;
+              border: 2px solid black;
+              border-radius: 10px;
+              width: 350px;
+              height: 80px;
+              
+
+             /* using flexbox  atribut*/
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 30px;
+              font-weight:800;
+              color:blue;
+
+            /* using box model  atribut*/
+              margin: 10px;
+             
+            /* using  position  atribut*/
+              position: relative;
+
+            /* using  shaddow  atribut*/
+              box-shadow: 10px 12px 80px  20px red;
+
+            /* using  animation  atribut*/
+
+              /* animation-name:rightMovement;
+              animation-duration: 3s;
+              animation-iteration-count:1;
+              animation-delay: 0s;
+              animation-timing-function:cubic-bezier(1,-1,1,1);
+              animation-direction: alternate; */
+            /* animation-fill-mode:forwards; */
+        
+           /* use all animation atribut in one single line */
+            animation: 3s cubic-bezier(1,-1,1,1) 1s infinite alternate none running rightMovement;
+
+            
+        }
+
+
+
+        .box2{
+
+/* using simple atribut */
+
+ background-color:cadetblue;
+ border: 2px solid black;
+ border-radius: 10px;
+ width: 350px;
+ height: 80px;
+ 
+
+/* using flexbox  atribut*/
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 30px;
+ font-weight:800;
+ color:blue;
+
+/* using box model  atribut*/
+ margin: 10px;
+
+/* using  position  atribut*/
+ position: relative;
+
+/* using  shaddow  atribut*/
+ box-shadow: 10px 12px 80px  20px red;
+
+/* using  animation  atribut*/
+
+ /* animation-name:leftMovement;
+ animation-duration: 3s;
+ animation-iteration-count:1;
+ animation-delay: 0s;
+ animation-timing-function:cubic-bezier(1,-1,1,1);
+ animation-direction: alternate; */
+/* animation-fill-mode:forwards; */
+
+/* use all animation atribut in one single line */
+animation: 3s cubic-bezier(1,-1,1,1) 1s infinite alternate none running leftMovement;
+
+
+      }
+
+
+   #circle{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight:800;
+    color:blue;
+    margin: 10px;
+    position: relative;
+    background-color:cadetblue;
+    border: 2px solid black;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    top: 250px;
+    left: 500px;
+
+
+    /* add animation on circle */
+
+    animation: 10s ease-in-out 0s infinite alternate-reverse none running circleMovement;
+
+   }
+
+          
+        @keyframes rightMovement{
+            from{ 
+                    top: 0px;
+                    left: 0px;
+            }
+            to{ 
+                    top: 0px;
+                    left: 1250px;
+            }
+        }
+
+
+        @keyframes leftMovement{
+            from{ 
+                    top: 680px;
+                    left: 1350px;
+            }
+            to{ 
+                    top: 680px;
+                    left: 0;
+            }
+        }
+
+
+
+        @keyframes circleMovement{
+           0%{
+                    top: 4%;
+                    left: 5%;
+           }
+
+           30%{
+                    top: 5%;
+                    left: 65%;
+           }
+
+           60%{
+                    top: 48%;
+                    left: 19%;
+           }
+
+
+           100%{
+                    top:60%;
+                    left:80%;
+           }
+
+        }
+         
+
+    </style>
+
+
+</head>
+
+<body>
+
+     <div class="container">
+
+
+            <div class="box1">
+                Right Animation
+            </div>
+
+
+            <div class="box2">
+                Left Animation
+            </div>
+
+
+            <div id="circle">
+                Cicle
+            </div>
+
+
+
+     </div>
+    
+</body>
+
+</html>
