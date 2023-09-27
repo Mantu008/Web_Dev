@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>String Manupalition</title>
+</head>
+<body>
+           <script type="text/javascript">
+            
+            var x="This Practicle is besed on javascript practicle.";
+            var y="Practicle 10 is performed in EC1=b";
+
+            document.write("String X="+x+"<hr>");
+            document.write("String Y="+y+"<hr>");
+            var a=x + y;
+            document.write("String A="+a+"<hr>");
+            var b=y.concat(" ",x);
+            document.write("String B="+b+"<hr>");
+            document.write("String Length of X="+x.length+"<hr>");
+            var c=y.indexOf("cti");
+            document.write(c + "<hr>");
+            var d=x.search("on");
+            document.write(d+"<hr>");
+            var e=y.slice(2,8);
+            document.write(e + "<hr>");
+            var f=y.substring(2,8);
+            document.write(f + "<hr>");
+            var g=y.substr(2,8);
+            document.write(g+"<hr>");
+
+            document.write(y.replace("Practicle" ,"ten") + "<hr>");
+            document.write(y.toLocaleLowerCase() + "<hr>");
+
+            var i="      hello    world    ";
+            alert(i.trim());
+
+            var j=y.charAt(2);
+            document.write(j + "<hr>");
+
+            var k="a|b|c|d|e";
+            document.write(k.split("|") + "<hr>");
+     
+           </script>
+</body>
+</html>
