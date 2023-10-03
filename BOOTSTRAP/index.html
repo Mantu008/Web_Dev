@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../BOOTSTRAP/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="inx.html">Mantu Technicle</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero-section start -->
+
+      <section class="bg-main bg-color hero-section">
+         <div class="container">
+              <div class="row">
+                <div class="col">
+                    <h1>We collect High Quality Leads</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quo accusamus perspiciatis est nihil recusandae.</p>
+                    <div class="text-center">
+                        <button class="text-capitalize" data-bs-toggle="tooltip" data-bs-title="Contact us">Contact us</button>
+                    </div>
+                </div>
+                   <!-- herosecton-image -->
+                   <div class="col">
+                       <div class="text-center">
+                              <a href="https://login.marwadiuniversity.ac.in:553/"><img width="300px" height="300px" src="/BOOTSTRAP/image/Login.png"></img></a>
+                       </div>
+                   </div>
+              </div>
+         </div>
+      </section>
+
+      <!-- hero-section end -->
+
+
+    <script src="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>
