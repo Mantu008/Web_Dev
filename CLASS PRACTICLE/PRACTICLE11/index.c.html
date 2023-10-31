@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="f1()" onresize="f3()">
+    
+         <p>try to resize the browser windows to display the windows height and width</p>
+         
+         <p id="demo"></p>
+         <img src="/HTML_CSS_PROJECT/Electronics E Commerce/image/category/phone.png" onerror="f2()" height="300" width="300" style="border: 1px solid black;">
+
+         <script>
+            function f1(){
+                alert("Page is loading ...!");
+            }
+
+            function f2(){
+                alert("Page is not exeist...!");
+            }
+
+            function f3(){
+                let w=window.outerWidth;
+                let h=window.outerHeight;
+                let text="Windows size : Width=" + w + ", height=" + h;
+                document.getElementById("demo").innerHTML=text;
+                alert("Windows size : Width=" + w + ", height=" + h);
+            }
+         </script>
+</body>
+</html>

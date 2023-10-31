@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prac_11b</title>
+</head>
+<body>
+    <input type="text" id="t1" onkeydown="keyp()">
+    <script>
+        function keyp() {
+            var char1 = document.getElementById("t1").value;
+            if (char1=='a' || char1=='e' ||char1=='i' ||char1=='o' || char1=='u' || char1=='A' ||char1=='E' ||char1=='I' ||char1=='O' ||char1=='U'){
+                alert("you have pressed vowel " +"and key cade is:-"+ char1.charCodeAt(0));
+                document.getElementById("t1");
+            }
+        }
+    </script>
+</body>
+</html>
