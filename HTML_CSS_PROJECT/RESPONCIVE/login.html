@@ -79,12 +79,12 @@
 </form>
 
 <script>
-document.getElementById("loginForm").addEventListener("submit", function(event) {
+ document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
     // Get the values entered in the form
-    var email = document.getElementsByName("email")[0].value;
-    var password = document.getElementsByName("password")[0].value;
+    let email = document.getElementsByName("email")[0].value;
+    let password = document.getElementsByName("password")[0].value;
 
     // Check if the email and password are correct
     if (email === "mantukumar87586299@gmail.com" && password === "mantu") {
