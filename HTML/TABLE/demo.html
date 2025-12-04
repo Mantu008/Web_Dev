@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotation Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      max-width: 900px;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .header-row td {
+      border: none;
+    }
+
+    .double-cell {
+      width: 50%;
+      vertical-align: top;
+    }
+
+    .right-section {
+      display: flex;
+      gap: 0;
+      justify-content: space-between;
+    }
+
+    .right-column {
+      width: 48%;
+      border-left: 1px solid #000;
+      padding: 0 8px;
+    }
+
+    .right-column:first-child {
+      border-left: none;
+    }
+
+    .amount-summary {
+      text-align: right;
+    }
+
+    .total-row {
+      font-weight: bold;
+    }
+
+    .amount-in-words {
+      border: 1px solid #000;
+      padding: 8px;
+      margin-top: 10px;
+    }
+
+    /* Fix for the first table layout */
+    .first-table td {
+      width: 33.33%;
+      vertical-align: top;
+      padding: 10px;
+    }
+
+    /* Center text styling */
+    .center-text {
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    /* Update the hr styling so it touches the cell edges */
+    .first-table td hr {
+      margin: 10px -10px;
+      border: 0;
+      border-top: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <table class="first-table">
+    <tr>
+      <td colspan="3" class="center-text">Quotation</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>To:</strong><br>
+        Mantu Kumar<br>
+        Patna, Bihar - 841501<br>
+        Uliona<br>
+        <hr>
+        <strong>Consignee:</strong><br>
+        Sahil<br>
+        Rajkot, Nagaland - 360003<br>
+        <hr>
+        <strong>Concern Person Details:</strong><br>
+        Sahil Kumar<br>
+        789456123<br>
+        mantukumar87586299@gmail.com
+      </td>
+      <td>
+        Quotation Prepared By :<br>
+        <strong>Roshni</strong>
+        <hr>
+        Quotation Verified By :<br>
+        <strong>Hemant</strong>
+        <hr>
+        Quotation No. :<br>
+        <strong>QT-2526-78785-1234</strong>
+        <hr>
+        Quotation Date :<br>
+        <strong>13-02-2025</strong>
+        <hr>
+        Inquiry No. : <br>
+        <strong>DEF456</strong>
+      </td>
+      <td>
+        Inquiry Date :<br>
+        <strong>21-02-2025</strong>
+        <hr>
+        Reference No. :<br>
+        <strong>ABC123</strong>
+        <hr>
+        Reference Date :<br>
+        <strong>12-02-2025</strong>
+        <hr>
+        Payment Terms :<br>
+        <strong>100% Advance</strong>
+        <hr>
+        Terms of Delivery : <br>
+        <strong>Payment before delivery</strong>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th>Sr. No.</th>
+      <th>Item</th>
+      <th>HSN</th>
+      <th>Quantity</th>
+      <th>Rate / Unit</th>
+      <th>Discount</th>
+      <th>Amount (Rs.)</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Good<br>iPhone<br>Model No.: SE17</td>
+      <td>1234</td>
+      <td>10</td>
+      <td>15.00</td>
+      <td>10.00%</td>
+      <td>135.00</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Good<br>Pixon<br>Model No.: PIX454</td>
+      <td>PIX5</td>
+      <td>10</td>
+      <td>9.00</td>
+      <td>10.00%</td>
+      <td>81.00</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="3">Total</td>
+      <td>20</td>
+      <td colspan="2"></td>
+      <td>216.00</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="6" class="amount-summary">Discount 10.00%</td>
+      <td>21.60</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="6" class="amount-summary">Packing Cost</td>
+      <td>10.00</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="6" class="amount-summary">Shipping Cost</td>
+      <td>10.00</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="6" class="amount-summary">Sub Total</td>
+      <td>214.40</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="6" class="amount-summary">CGST 10.00%</td>
+      <td>21.44</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="6" class="amount-summary">SGST 10.00%</td>
+      <td>21.44</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="6" class="amount-summary">Round Off</td>
+      <td>0.28</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="6" class="amount-summary">Amount Payable (Rs.)</td>
+      <td>257.00</td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="amount-in-words">
+        <strong>Amount in Words:</strong> Indian Rupee Two Hundred Fifty Seven Only
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
