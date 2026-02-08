@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-nav {
+    width: 100%;
+    height: 70px;
+    background: rgb(130, 130, 231);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+
+.nav-search {
+    width: 450px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.nav-profile,
+.nav-more,
+.nav-Seller,
+.nav-cart {
+    width: 28px;
+    color: rgb(16, 16, 16);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-dropdown {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.more-dropdown {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.nav-img {
+    width: 120px;
+    cursor: pointer;
+}
+
+.nav-img:hover,
+.nav-profile:hover,
+.nav-cart:hover,
+.nav-more:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}

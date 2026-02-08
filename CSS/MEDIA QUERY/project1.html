@@ -54,12 +54,14 @@
         font-weight: 200;
     }
 
-    @media (min-width:1200px){
+    /* Apply this CSS when screen size is 1200px OR MORE */
+    @media (min-width:1200px){ 
         .container{
            flex-direction: row;
         }
     }
 
+    /* “Apply this CSS when screen size is 1200px OR LESS” */
     @media (max-width:1200px){
         .container{
            flex-direction:column;

@@ -1,15 +1,15 @@
-.box{
-    width:400px;
-    height:400px;
-    background-color:aqua;
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
     border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition:all 5s linear 0s;
+    transition: all 5s linear 0s;
 }
 
-.container{
+.container {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -19,24 +19,22 @@
     background-color: antiquewhite;
 }
 
-.box:hover{
+.box:hover {
+    /* transform:rotate(360deg); */
+    /* transform:rotate(-360deg); */
 
-      /* transform:rotate(360deg); */
-      /* transform:rotate(-360deg); */
+    transform: rotate(2turn);
 
-      transform: rotate(2turn);
+    /* transform: scale(2); */
+    /* transform: scale(0.5); */
 
-      /* transform: scale(2); */
-      /* transform: scale(0.5); */
+    /* transform: skew(45deg); */
+    /* transform: skew(-45deg); */
 
-      /* transform: skew(45deg); */
-      /* transform: skew(-45deg); */
-
-      /* transform: translate(500px,-500px); */
-      /* transform: scale(2) translate(-100%,-100%); */
-
+    /* transform: translate(500px,-500px); */
+    /* transform: scale(2) translate(-100%,-100%); */
 }
 
-p{
+p {
     font-size: 35px;
 }

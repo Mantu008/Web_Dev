@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns:repeat(1,1fr) ;
+            grid-template-rows:repeat(8,1fr) ;
+        }
+        .child{
+            border: 1px solid black;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .child:hover{
+            background-color: #a8d5e5;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+        }
+
+        @media (min-width:768px) {
+            .container{
+                grid-template-columns:repeat(4,1fr) ;
+                grid-template-rows:repeat(3,1fr) ;
+            }
+
+            .sidebar{
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+
+            .navbar{
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+
+            .header{
+                grid-column-start: 4;
+                grid-column-end: 5;
+            }
+
+            .article{
+               grid-column: 4 / 5;
+               grid-row: 2 / 4;
+            }
+
+        }
+    </style>
+</head>
+<body>
+      <div class="container">
+         <div class="child navbar">Navbar</div>
+          <div class="child sidebar">Sidebar</div>
+         <div class="child header">Header</div>
+         <div class="child content-1">Content 1</div>
+         <div class="child content-2">Content 2</div>
+         <div class="child content-3">content 3</div>
+         <div class="child content-4">content 4</div>
+         <div class="child article">Article</div>
+      </div>
+</body>
+</html>

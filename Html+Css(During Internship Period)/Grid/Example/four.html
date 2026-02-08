@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .child{
+            background: #dddbdb;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .child:hover{
+            background: #0fc469;
+            color: #fff;
+        }
+
+        .one{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .eight{
+            grid-column: 1/3;
+            grid-row: 3/5;
+        }
+
+        .thirteen{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+    </style>
+</head>
+<body>
+       <div class="container">
+         <div class="child one">One</div>
+         <div class="child two">Two</div>
+         <div class="child three">Three</div>
+         <div class="child four">Four</div>
+         <div class="child five">Five</div>
+         <div class="child six">Six</div>
+         <div class="child seven">Seven</div>
+         <div class="child eight">Eight</div>
+         <div class="child nine">Nine</div>
+         <div class="child ten">Ten</div>
+         <div class="child eleven">Eleven</div>
+         <div class="child twelve">Twelve</div>
+         <div class="child thirteen">Thirteen</div>
+         <div class="child fourteen">Fourteen</div>
+       </div>
+</body>
+</html>
