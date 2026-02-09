@@ -18,7 +18,7 @@
 }
 
 .child-container {
-    border: 1px solid black;
+    border: 1px solid rgb(46, 42, 42);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,4 +83,110 @@
     background: #f5f5f5;
     width: 300px;
     font-weight: bold;
+}
+
+/* Left Sidebar Css */
+
+.left-sidebar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+}
+
+.left-child-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    /* border: 1px solid rgb(133, 111, 111); */
+    padding-left: 10px;
+}
+
+.left-child-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.left-child-container:hover {
+    background-color: #b3aeae;
+    cursor: pointer;
+}
+
+.left-child-container a:hover {
+    color: #1877f2;
+}
+
+/* RIght Sidebar Css */
+
+.right-sidebar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+}
+
+.right-child-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    /* border: 1px solid rgb(133, 111, 111); */
+    padding-left: 10px;
+}
+
+.right-child-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family:
+        "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.right-child-container:hover {
+    background-color: #e6e2e2;
+    cursor: pointer;
+}
+
+.right-child-container a:hover {
+    color: #1877f2;
+}
+
+img {
+    border-radius: 55%;
+}
+
+.birthday {
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+/* Feed style  */
+
+.feed {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 2fr 3fr;
+    gap: 1rem;
+    /* border: 1px solid rgb(46, 42, 42); */
+}
+
+.child {
+    border: 1px solid rgb(133, 111, 111);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
