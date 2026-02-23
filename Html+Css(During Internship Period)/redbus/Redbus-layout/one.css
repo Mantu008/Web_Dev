@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ================= CONTAINER ================= */
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65px 1fr;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+.main {
+    overflow-y: auto;
+}
+
+/* ================= NAVBAR ================= */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 14px;
+    height: 65px;
+}
+
+.left-nav,
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.left-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #1d1d1d;
+    padding-top: 5px;
+    transition: 0.3s;
+}
+
+.left-nav a:hover {
+    color: #d63941;
+    transform: translateY(-2px);
+}
+
+.right-nav a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #1d1d1d;
+    padding: 8px 12px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.right-nav a svg {
+    height: 22px;
+    width: 22px;
+}
+
+.right-nav a:hover {
+    background: #f2f2f2;
+    transform: scale(1.05);
+}
+
+/* ================= BANNER ================= */
+
+.banner {
+    height: 280px;
+    width: 100%;
+    background-image: url("https://s3.rdbuz.com/Images/responsiveweb/HomeBanner.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner h1 {
+    color: #fff;
+    font-weight: bold;
+    width: 90%;
+    max-width: 750px;
+    font-size: clamp(24px, 4vw, 45px);
+    z-index: 1;
+}
+
+/* ================= SEARCH BAR ================= */
+
+.search {
+    width: 90%;
+    max-width: 1200px;
+    border: 1px solid #ebe9e9;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.option-source,
+.option-destination,
+.search-date,
+.for-women {
+    border: 1px solid gray;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.option-source select,
+.option-destination select {
+    border: none;
+    padding: 16px;
+    width: 210px;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.search-date input {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.today,
+.tomorrow {
+    padding: 10px 14px;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-size: 13px;
+}
+
+.today {
+    background: rgb(201, 200, 200);
+}
+
+.tomorrow {
+    background: #dcbbbb;
+}
+
+.today:hover,
+.tomorrow:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.tomorrow:hover {
+    background: #e8bfbf;
+}
+
+.for-women {
+    padding: 10px;
+    width: 230px;
+}
+
+/* ================= SEARCH BUTTON ================= */
+
+.child-search {
+    height: 48px;
+    width: 300px;
+    background: #d01f27;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.child-search:hover {
+    cursor: pointer;
+    background: #d63941;
+    transform: translateX(-50%) scale(1.05);
+}
+
+/* ================= COMMON SECTIONS ================= */
+
+.festivals,
+.Offers,
+.whats-new {
+    width: 90%;
+    max-width: 1280px;
+    margin: 140px auto 0;
+}
+
+/* ================= FESTIVALS ================= */
+
+.festivals {
+    display: flex;
+    flex-direction: column;
+}
+
+.festivals-headder {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 10px;
+}
+
+.festivals-main-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.festivals-main-card-left {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.festivals-main-card-left-child-2,
+.festivals-main-card-left-child-3 {
+    height: 56px;
+    width: 183px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 12px;
+}
+
+/* ================= OFFERS ================= */
+
+.Offers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.Offers-child-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Offers-child-1 h4 {
+    font-size: 22px;
+}
+
+.Offers-child-1 button {
+    border: none;
+    background: none;
+    color: #5258e4;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Offers-child-2 {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 15px;
+}
+
+.Offers-child-2-nav {
+    padding: 10px 16px;
+    border-radius: 6px;
+    background: #fed9d5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Offers-child-2-nav:hover {
+    transform: scale(1.05);
+}
+
+.Offers-child-3 {
+    display: flex;
+    gap: 1.75rem;
+    flex-wrap: wrap;
+}
+
+.offer-card {
+    height: 200px;
+    width: 296px;
+    padding: 16px;
+    border-radius: 5px;
+    background: #fff;
+    background-size: cover;
+    background-position: center;
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.078),
+        0 4px 8px rgba(0, 0, 0, 0.078);
+    transition: 0.3s;
+}
+
+.offer-card:hover {
+    transform: translateY(-6px);
+}
+
+/* BACKGROUND IMAGES PRESERVED */
+
+.offer-card-1 {
+    background-image: url("https://st.redbus.in/Images/INDOFFER/AXIS/Axisimages/Android-iOS-296x200.png");
+}
+
+.offer-card-2 {
+    background-image: url("https://st.redbus.in/Images/INDOFFER/IDFC/Android-iOS-IDFC500.png");
+}
+
+.offer-card-3 {
+    background-image: url("https://st.redbus.in/Images/INDOFFER/AU/Android-iOS-296x200.png");
+}
+
+.offer-card-4 {
+    background-image: url("https://www.redbus.in/rpwassets/public/images/offerFallback.png");
+}
+
+/* ================= WHAT'S NEW ================= */
+
+.whats-new {
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.whats-new-child-1 h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.whats-new-child-2 {
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+}
+
+.whats-new-child-2-card div img {
+    height: 160px;
+    width: 296px;
+    border-radius: 16px;
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.078),
+        0 4px 8px rgba(0, 0, 0, 0.078);
+    cursor: pointer;
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+.whats-new-child-2-card div img:hover {
+    transform: scale(1.03);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+    .nav {
+        padding: 0 20px;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .option-source select,
+    .option-destination select,
+    .search-date,
+    .for-women {
+        width: 100%;
+    }
+
+    .child-search {
+        width: 90%;
+    }
+
+    .offer-card,
+    .whats-new-child-2-card div img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner {
+        height: 220px;
+    }
+
+    .banner h1 {
+        font-size: 22px;
+    }
+
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .left-nav,
+    .right-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
