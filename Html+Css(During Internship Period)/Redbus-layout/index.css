@@ -6,7 +6,7 @@
 }
 
 .container {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -111,11 +111,11 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* 0.5 = 50% darkness */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .banner h1 {
-    color: #ffff;
+    color: #f9f8f8fc;
     font-weight: bold;
     width: 90%;
     max-width: 750px;
@@ -140,11 +140,12 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
     padding: 15px;
     background: #ffffff;
     border-radius: 20px;
-    flex-wrap: wrap;
     z-index: 2;
+    padding-bottom: 30px;
 }
 
 .option-source select {
@@ -210,12 +211,13 @@
 }
 
 .today:hover {
+    background: rgb(165, 163, 163);
     cursor: pointer;
 }
 
 .tomorrow:hover {
     cursor: pointer;
-    background: #e8bfbf;
+    background: #eaa2a2;
 }
 
 .search-date input:hover {
@@ -231,26 +233,25 @@
 }
 
 .child-search {
-    /* padding: 20px; */
     height: 48px;
-    width: 300px;
+    width: 18.75rem;
     background: #d01f27;
     color: #fdfdfd;
     font-size: 16px;
     font-weight: bold;
     border-radius: 30px;
     position: absolute;
-    bottom: -90px;
+    bottom: -75px;
     left: 50%;
     transform: translateX(-50%);
     border: none;
-    transition: 0.3s;
     z-index: 2;
+    transition: 0.3s;
 }
 
 .child-search:hover {
     cursor: pointer;
-    background: #d63941;
+    background: #e90511;
 }
 
 /* Style for Festivals Card */
@@ -266,14 +267,14 @@
 .festivals-headder {
     display: flex;
     gap: 0.75rem;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .festivals-main-card {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .festivals-main-card-left {
@@ -351,7 +352,6 @@
     justify-content: space-between;
     margin-bottom: 10px;
 }
-
 .Offers-child-1 h4 {
     font-size: 22px;
 }
@@ -371,8 +371,8 @@
 
 .Offers-child-2 {
     display: flex;
-    margin-bottom: 15px;
     gap: 0.75rem;
+    margin-bottom: 15px;
 }
 
 .Offers-child-2-nav {
@@ -479,7 +479,7 @@
 .whats-new {
     width: 90%;
     max-width: 1280px;
-    margin: 20px auto 0;
+    margin: 30px auto 0;
     display: flex;
     flex-direction: column;
 }
@@ -512,4 +512,440 @@ h4 {
         0 2px 4px rgba(0, 0, 0, 0.078),
         0 4px 8px rgba(0, 0, 0, 0.078);
     cursor: pointer;
+}
+
+/* Style Government Busesn Section */
+
+.government-buses {
+    width: 90%;
+    max-width: 1280px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.government-buses-child-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+whats-new-child-1,
+h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.government-buses-child-2 {
+    display: flex;
+    gap: 1.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.government-buses-top-card {
+    box-sizing: border-box;
+    height: 245px;
+    width: 296px;
+    border-radius: 16px;
+    background: #ffff;
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.078),
+        0 4px 8px rgba(0, 0, 0, 0.078);
+    cursor: pointer;
+}
+
+.bus-card-head {
+    height: 85px;
+    width: 296px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 16px;
+    border-bottom: 1px solid rgb(228, 225, 225);
+}
+
+.bus-card-head img {
+    height: 48px;
+    width: 48;
+    border-radius: 50%;
+}
+
+.bus-card-head div {
+    line-height: 1.5;
+}
+
+.bus-card-head p {
+    color: #1d1d1da3;
+}
+
+.bus-card-detail {
+    height: 112px;
+    width: 296px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    gap: 0.75rem;
+    line-height: 1.5;
+    padding: 16px;
+}
+
+.bus-card-detail p:first-child {
+    color: #1d1d1d;
+    font-size: 14px;
+}
+
+.bus-card-detail p:last-child {
+    color: #1d1d1d;
+    font-size: 12px;
+}
+
+.bus-card-offer {
+    height: 48px;
+    width: 296px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fed9d5;
+    border-radius: 5px;
+}
+
+.bus-card-offer:hover {
+    background: #d8ada8;
+}
+
+/* CSS For Testimonials */
+
+.testimonials {
+    width: 90%;
+    max-width: 1280px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials-child-1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+whats-new-child-1,
+h4 {
+    font-size: 22px;
+}
+.testimonials-child-1 p {
+    color: #1d1d1da3;
+    font-size: 14px;
+}
+
+.testimonials-child-2 {
+    display: flex;
+    gap: 1.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.testimonials-top-card {
+    box-sizing: border-box;
+    height: 160px;
+    width: 220px;
+    border-radius: 16px;
+    background: #ffff;
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.078),
+        0 4px 8px rgba(0, 0, 0, 0.078);
+    cursor: pointer;
+    padding: 20px;
+    border: 1px solid rgb(228, 225, 225);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    gap: 0.75rem;
+}
+
+.testimonials-top-content p {
+    color: #1d1d1d;
+    font-size: 14px;
+}
+
+.testimonials-bottom-content p:first-child {
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.testimonials-bottom-content p:last-child {
+    color: #1d1d1da3;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*  off-banner Section Style*/
+
+.off-banner {
+    width: 90%;
+    max-width: 1280px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.off-banner-child {
+    height: 340px;
+    /* margin-bottom: 15px; */
+    background-image: url("./resources/off-banner/bg-banner.webp");
+    /* padding: 56px; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+
+.off-banner-child::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.downloadAppSection {
+    height: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    color: #ffffff;
+}
+
+.downloadAppSection-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    z-index: 2;
+}
+
+.downloadAppSection-right {
+    height: 228px;
+    width: 558px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 2;
+}
+
+.store-btn-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.store-btn-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.store-btn-top-child {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+/* Style About REdbus */
+
+.About-redbus {
+    width: 90%;
+    max-width: 1280px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.About-redbus-main-head {
+    font-size: 22px;
+    color: #1d1d1d;
+}
+
+.about-list-items h2 {
+    font-size: 21px;
+}
+
+.about-list-items {
+    font-size: 14px;
+}
+
+.about-list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    color: #1d1d1da3;
+}
+
+.about-list-items div ul {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.about-list-items p {
+    line-height: 1.4;
+}
+
+/* Style booking-reddeals */
+
+.booking-reddeals {
+    width: 90%;
+    max-width: 1280px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.booking-reddeals div h2 {
+    padding: 12px 0;
+    font-size: 22px;
+}
+
+.booking-reddeals div p {
+    font-size: 14px;
+}
+
+.unbeatable-exclusive-reddeals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid rgb(228, 225, 225);
+    border-radius: 16px;
+}
+
+.unbeatable-exclusive-reddeals div p:first-child {
+    font-size: 14.4px;
+    font-weight: bold;
+}
+.unbeatable-exclusive-reddeals div p:last-child {
+    font-size: 12px;
+}
+
+.unbeatable-exclusive-reddeals-left div img {
+    margin-top: 15px;
+}
+
+.unbeatable-exclusive-reddeals-left {
+    display: flex;
+    gap: 1rem;
+    line-height: 1.6;
+    align-items: center;
+}
+
+.unbeatable-exclusive-reddeals-right button {
+    height: 48px;
+    width: 256px;
+    background: #d01f27;
+    color: #fdfdfd;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    padding: 20px 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.unbeatable-exclusive-reddeals-right button:hover {
+    background: #c55b61;
+}
+
+/* Style faqs */
+
+.faqs {
+    width: 90%;
+    max-width: 1280px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faqs-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.faqs-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: ceter;
+    border-bottom: 1px solid rgb(228, 225, 225);
+}
+
+.faqs-nav button {
+    height: 48px;
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+    padding: 0px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-bottom: 4px solid #ffffff;
+}
+
+.faqs-nav button:hover {
+    border-bottom: 4px solid #e90511;
+    color: red;
+    background: #ebeaea;
+}
+
+.faqs-accordian {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 12px;
+    border-bottom: 1px solid rgb(228, 225, 225);
+}
+
+.faqs-accordian h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1d1d1d;
+    cursor: pointer;
+}
+.faqs-accordian div svg {
+    cursor: pointer;
+}
+
+/* Style Footer */
+
+.footer {
+    background: #f2f2f8;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1280px;
+    margin: 30px auto 0;
 }

@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redbus Layout</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="container-child header">
+        <nav class="header-child nav">
+          <div class="left-nav">
+            <a href="#"
+              ><img
+                src="data:image/png;base64,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"
+                alt="redBus logo"
+                title="redBus"
+                width="56"
+                height="56"
+              />
+            </a>
+            <a
+              href="#"
+              class="bus_ticket_img_hyperlink"
+              aria-label="Bus tickets"
+              ><img
+                class="bus_ticket_img_logo"
+                src="./resources/bus_logo.svg"
+                alt="Online Bus Tickets Booking"
+                title="Online Bus Tickets Booking"
+                width="38"
+                height="22"
+              /><span class="lobName___8c122a">Bus tickets</span></a
+            >
+            <a
+              href="#"
+              class="bus_ticket_img_hyperlink"
+              aria-label="Bus tickets"
+              ><img
+                class="bus_ticket_img_logo"
+                src="./resources/rail_logo.svg"
+                alt="Online Train Tickets Booking"
+                title="Online Train Tickets Booking"
+                width="38"
+                height="22"
+              /><span class="lobName___8c122a">Train tickets</span></a
+            >
+          </div>
+          <div class="right-nav">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M128,96a32,32,0,1,0,32,32A32,32,0,0,0,128,96Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,144Zm0-64A32,32,0,1,0,96,48,32,32,0,0,0,128,80Zm0-48a16,16,0,1,1-16,16A16,16,0,0,1,128,32Zm0,144a32,32,0,1,0,32,32A32,32,0,0,0,128,176Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,224Z"
+                ></path></svg
+              >Bookings</a
+            >
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z"
+                ></path></svg
+              >Help</a
+            >
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"
+                ></path></svg
+              >Account</a
+            >
+          </div>
+        </nav>
+      </header>
+
+      <main class="container-child main">
+        <section class="banner">
+          <h1>India's No. 1 online bus ticket booking site</h1>
+          <section class="parent-search search">
+            <div class="option-source">
+              <select name="From" id="from">
+                <option value="">From</option>
+                <option value="">Jaipur</option>
+                <option value="">Rajkot</option>
+                <option value="">Ahmedebad</option>
+                <option value="">Kolkata</option>
+                <option value="">Delhi</option>
+              </select>
+            </div>
+
+            <div class="option-destination">
+              <select name="From" id="from">
+                <option value="">To</option>
+                <option value="">Jaipur</option>
+                <option value="">Rajkot</option>
+                <option value="">Ahmedebad</option>
+                <option value="">Kolkata</option>
+                <option value="">Delhi</option>
+              </select>
+            </div>
+
+            <div class="search-date">
+              <input type="date" />
+              <span class="today">Today</span>
+              <span class="tomorrow">Tommorow</span>
+            </div>
+            <div class="for-women">
+              <p>Booking for women</p>
+              <a href="#">Know More</a>
+              <input
+                id="switch"
+                type="checkbox"
+                class="chkbox"
+                aria-label=""
+                tabindex="-1"
+              />
+            </div>
+          </section>
+          <button class="child-search">Search Buses</button>
+        </section>
+
+        <section class="festivals">
+          <div class="festivals-headder">
+            <img
+              src="./resources/festival/rail_logo.svg"
+              class="festivals-headder-child"
+              alt="rail_logo"
+              width="40px"
+              height="40px"
+            />
+            <div class="festivals-headder-child">
+              <h3>Book trains for festivals</h3>
+              <p style="color: #1d1d1da3; font: 14px">
+                Book now to get confirmed ticket
+              </p>
+            </div>
+          </div>
+
+          <div class="festivals-main-card">
+            <div class="festivals-main-card-left">
+              <div class="festivals-main-card-left-child">
+                Get ₹100 off using code
+                <span style="color: green"><strong>FESTIVE</strong></span>
+              </div>
+              <div class="festivals-main-card-left-child-2">
+                <div>Mar</div>
+                <div style="color: #e40808a3">Navami</div>
+              </div>
+              <div class="festivals-main-card-left-child-3">
+                <div>Apr</div>
+              </div>
+            </div>
+            <div class="festivals-main-card-right">
+              <div class="festivals-main-card-right-child">
+                <button>Book trains now</button>
+              </div>
+              <div class="festivals-main-card-right-child">
+                <span style="color: #1d1d1da3; font: 14px">
+                  Authorised IRCTC partner</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Offers">
+          <div class="Offers-child-1">
+            <h4>Offers for you</h4>
+            <div><button>View more</button></div>
+          </div>
+
+          <div class="Offers-child-2">
+            <div class="Offers-child-2-nav">
+              <div><strong>All</strong></div>
+            </div>
+            <div class="Offers-child-2-nav"><div>Bus</div></div>
+            <div class="Offers-child-2-nav"><div>Train</div></div>
+          </div>
+
+          <div class="Offers-child-3">
+            <article class="offer-card offer-card-1" tabindex="0">
+              <div class="offer-card-veachale-type">Bus</div>
+              <div class="offer-card-heading">
+                Save upto Rs 500 with Axis Bank Credit Cards
+              </div>
+              <div class="offer-card-valid-date">Valid till 28 Feb</div>
+              <button class="offer-card-getOffer-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M243.31,136,144,36.69A15.86,15.86,0,0,0,132.69,32H40a8,8,0,0,0-8,8v92.69A15.86,15.86,0,0,0,36.69,144L136,243.31a16,16,0,0,0,22.63,0l84.68-84.68a16,16,0,0,0,0-22.63Zm-96,96L48,132.69V48h84.69L232,147.31ZM96,84A12,12,0,1,1,84,72,12,12,0,0,1,96,84Z"
+                  ></path></svg
+                >AXIS500
+              </button>
+            </article>
+            <article class="offer-card offer-card-2" tabindex="0">
+              <div class="offer-card-veachale-type">Bus</div>
+              <div class="offer-card-heading">
+                Save upto Rs 500 with Axis Bank Credit Cards
+              </div>
+              <div class="offer-card-valid-date">Valid till 28 Feb</div>
+              <button class="offer-card-getOffer-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M243.31,136,144,36.69A15.86,15.86,0,0,0,132.69,32H40a8,8,0,0,0-8,8v92.69A15.86,15.86,0,0,0,36.69,144L136,243.31a16,16,0,0,0,22.63,0l84.68-84.68a16,16,0,0,0,0-22.63Zm-96,96L48,132.69V48h84.69L232,147.31ZM96,84A12,12,0,1,1,84,72,12,12,0,0,1,96,84Z"
+                  ></path></svg
+                >AXIS500
+              </button>
+            </article>
+            <article class="offer-card offer-card-3" tabindex="0">
+              <div class="offer-card-veachale-type">Bus</div>
+              <div class="offer-card-heading">
+                Save upto Rs 500 with Axis Bank Credit Cards
+              </div>
+              <div class="offer-card-valid-date">Valid till 28 Feb</div>
+              <button class="offer-card-getOffer-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M243.31,136,144,36.69A15.86,15.86,0,0,0,132.69,32H40a8,8,0,0,0-8,8v92.69A15.86,15.86,0,0,0,36.69,144L136,243.31a16,16,0,0,0,22.63,0l84.68-84.68a16,16,0,0,0,0-22.63Zm-96,96L48,132.69V48h84.69L232,147.31ZM96,84A12,12,0,1,1,84,72,12,12,0,0,1,96,84Z"
+                  ></path></svg
+                >AXIS500
+              </button>
+            </article>
+            <article class="offer-card offer-card-4" tabindex="0">
+              <div class="offer-card-veachale-type">Bus</div>
+              <div class="offer-card-heading">
+                Save upto Rs 500 with Axis Bank Credit Cards
+              </div>
+              <div class="offer-card-valid-date">Valid till 28 Feb</div>
+              <button class="offer-card-getOffer-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M243.31,136,144,36.69A15.86,15.86,0,0,0,132.69,32H40a8,8,0,0,0-8,8v92.69A15.86,15.86,0,0,0,36.69,144L136,243.31a16,16,0,0,0,22.63,0l84.68-84.68a16,16,0,0,0,0-22.63Zm-96,96L48,132.69V48h84.69L232,147.31ZM96,84A12,12,0,1,1,84,72,12,12,0,0,1,96,84Z"
+                  ></path></svg
+                >AXIS500
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <section class="whats-new">
+          <div class="whats-new-child-1">
+            <h4>What's new</h4>
+          </div>
+
+          <div class="whats-new-child-2">
+            <article class="whats-new-child-2-card">
+              <div>
+                <a href="#">
+                  <img
+                    src="https://s3.rdbuz.com/Images/addon/Banner-1.png"
+                    alt="ACKO"
+                /></a>
+              </div>
+            </article>
+            <article class="whats-new-child-2-card">
+              <div>
+                <a href="#">
+                  <img
+                    src="https://st.redbus.in/Images/busImage/Free_Cancellation_New1.png"
+                    alt="Free cancellation. Get 100% refund on cancellation"
+                /></a>
+              </div>
+            </article>
+            <article class="whats-new-child-2-card">
+              <div>
+                <a href="#">
+                  <img
+                    src="https://s3.rdbuz.com/btt/inv/btt_app_card.png"
+                    alt="Introducing Bus timetable Get local bus timings between cities in your state"
+                  />
+                </a>
+              </div>
+            </article>
+            <article class="whats-new-child-2-card">
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://s3.rdbuz.com/Images/perzcards/FlexiTicket.png"
+                    alt="FlexiTicket Get amazing benefits on Date Change & Cancellation."
+                /></a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="government-buses">
+          <div class="government-buses-child-1">
+            <h4>Government Buses</h4>
+          </div>
+
+          <div class="government-buses-child-2">
+            <article class="government-buses-child-2-card">
+              <div class="government-buses-top-card">
+                <div class="government-buses-top-card-child bus-card-head">
+                  <img src="./resources/Gov-Buses/krctc.png" alt="krctc_logo" />
+                  <div>
+                    <h3>KSRTC(KN)</h3>
+                    <p>ಕರ್ನಾಟಕ ರಾಜ್ಯ ರಸ್ತೆ ಸಾರಿಗೆ ಸಂಸ್ಥೆ</p>
+                  </div>
+                </div>
+                <div class="government-buses-top-card-child bus-card-detail">
+                  <p>
+                    2100 services including Volvo Bus, AC & Non AC Bus and more
+                  </p>
+                  <p>Official booking partner of KSRTC</p>
+                </div>
+                <div class="government-buses-top-card-child bus-card-offer">
+                  <p>24*7 customer service (Call or chat)</p>
+                </div>
+              </div>
+            </article>
+            <article class="government-buses-child-2-card">
+              <div class="government-buses-top-card">
+                <div class="government-buses-top-card-child bus-card-head">
+                  <img src="./resources/Gov-Buses/krctc.png" alt="krctc_logo" />
+                  <div>
+                    <h3>KSRTC(KN)</h3>
+                    <p>ಕರ್ನಾಟಕ ರಾಜ್ಯ ರಸ್ತೆ ಸಾರಿಗೆ ಸಂಸ್ಥೆ</p>
+                  </div>
+                </div>
+                <div class="government-buses-top-card-child bus-card-detail">
+                  <p>
+                    2100 services including Volvo Bus, AC & Non AC Bus and more
+                  </p>
+                  <p>Official booking partner of KSRTC</p>
+                </div>
+                <div class="government-buses-top-card-child bus-card-offer">
+                  <p>24*7 customer service (Call or chat)</p>
+                </div>
+              </div>
+            </article>
+            <article class="government-buses-child-2-card">
+              <div class="government-buses-top-card">
+                <div class="government-buses-top-card-child bus-card-head">
+                  <img src="./resources/Gov-Buses/krctc.png" alt="krctc_logo" />
+                  <div>
+                    <h3>KSRTC(KN)</h3>
+                    <p>ಕರ್ನಾಟಕ ರಾಜ್ಯ ರಸ್ತೆ ಸಾರಿಗೆ ಸಂಸ್ಥೆ</p>
+                  </div>
+                </div>
+                <div class="government-buses-top-card-child bus-card-detail">
+                  <p>
+                    2100 services including Volvo Bus, AC & Non AC Bus and more
+                  </p>
+                  <p>Official booking partner of KSRTC</p>
+                </div>
+                <div class="government-buses-top-card-child bus-card-offer">
+                  <p>24*7 customer service (Call or chat)</p>
+                </div>
+              </div>
+            </article>
+            <article class="government-buses-child-2-card">
+              <div class="government-buses-top-card">
+                <div class="government-buses-top-card-child bus-card-head">
+                  <img src="./resources/Gov-Buses/krctc.png" alt="krctc_logo" />
+                  <div>
+                    <h3>KSRTC(KN)</h3>
+                    <p>ಕರ್ನಾಟಕ ರಾಜ್ಯ ರಸ್ತೆ ಸಾರಿಗೆ ಸಂಸ್ಥೆ</p>
+                  </div>
+                </div>
+                <div class="government-buses-top-card-child bus-card-detail">
+                  <p>
+                    2100 services including Volvo Bus, AC & Non AC Bus and more
+                  </p>
+                  <p>Official booking partner of KSRTC</p>
+                </div>
+                <div class="government-buses-top-card-child bus-card-offer">
+                  <p>24*7 customer service (Call or chat)</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="testimonials">
+          <div class="testimonials-child-1">
+            <h4>Testimonials</h4>
+            <p>Hear from our satisfied customers in their own words</p>
+          </div>
+
+          <div class="testimonials-child-2">
+            <article class="testimonials-child-2-card">
+              <div class="testimonials-top-card">
+                <div class="testimonials-top-content">
+                  <p>Incredible Journey. Safest and comfortable.</p>
+                </div>
+                <div class="testimonials-bottom-content">
+                  <p>Abhinav Jain</p>
+                  <p>redbus customer since 2016</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonials-child-2-card">
+              <div class="testimonials-top-card">
+                <div class="testimonials-top-content">
+                  <p>Incredible Journey. Safest and comfortable.</p>
+                </div>
+                <div class="testimonials-bottom-content">
+                  <p>Abhinav Jain</p>
+                  <p>redbus customer since 2016</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonials-child-2-card">
+              <div class="testimonials-top-card">
+                <div class="testimonials-top-content">
+                  <p>Incredible Journey. Safest and comfortable.</p>
+                </div>
+                <div class="testimonials-bottom-content">
+                  <p>Abhinav Jain</p>
+                  <p>redbus customer since 2016</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonials-child-2-card">
+              <div class="testimonials-top-card">
+                <div class="testimonials-top-content">
+                  <p>Incredible Journey. Safest and comfortable.</p>
+                </div>
+                <div class="testimonials-bottom-content">
+                  <p>Abhinav Jain</p>
+                  <p>redbus customer since 2016</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="off-banner">
+          <div class="off-banner-child">
+            <div class="downloadAppSection">
+              <div class="downloadAppSection-left">
+                <div>
+                  <img
+                    src="./resources/off-banner/phone-money.svg"
+                    alt="phone_logo"
+                    width="38"
+                    height="36"
+                    style="fill: white; stroke: white"
+                  />
+                </div>
+                <p>Grab 10% off now</p>
+                <div>
+                  <p>Download App to unlock offer!</p>
+                  <p>Use Code: APP10</p>
+                </div>
+              </div>
+              <div class="downloadAppSection-right">
+                <div><p>Download redBus App on</p></div>
+                <div class="store-btn-main">
+                  <div class="store-btn-top">
+                    <div class="store-btn-top-child">
+                      <div>
+                        <img
+                          src="./resources/off-banner/playStore.svg"
+                          alt="play_store_logo"
+                          width="184"
+                          height="54"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="32"
+                            fill="#000000"
+                            viewBox="0 0 256 256"
+                          >
+                            <path
+                              d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"
+                            ></path>
+                          </svg>
+                          4.6
+                        </p>
+                        <p>10 crore+ Downloads</p>
+                      </div>
+                    </div>
+                    <div class="store-btn-top-child">
+                      <div>
+                        <img
+                          src="./resources/off-banner/appStore.svg"
+                          alt="app_store_logo"
+                          width="184"
+                          height="59"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="32"
+                            fill="#000000"
+                            viewBox="0 0 256 256"
+                          >
+                            <path
+                              d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"
+                            ></path>
+                          </svg>
+                          4.7
+                        </p>
+                        <p>1.5 crore+ Downloads</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p>Scan to download</p>
+                    <img
+                      src="./resources/off-banner/indAppDownloadQR.jpeg"
+                      alt="qr_logo"
+                      width="120"
+                      height="120"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="About-redbus">
+          <h2 class="About-redbus-main-head">redBus: India’s Leading Online Bus Booking and Train Ticket Booking Platform</h2>
+         <div class="about-list-items">
+           <p>redBus is India’s leading bus and train ticket booking platform for over 18 years and 56+ million satisfied users. It offers a seamless online ticket booking experience for millions of people. </p>
+          <p>With 5200+ bus operators and 730000+ routes on redBus, you can easily find buses to your destination. You can check the best price with exclusive discounts and offers when booking train or bus tickets.</p>
+          <h2>Why Choose redBus for Bus Booking?</h2>
+          <p>Below are some of the reasons why you should choose redBus for booking bus tickets. </p>
+          <div>
+            <ul>
+              <li><strong>Free Cancellation</strong> - Cancel bus tickets without paying cancellation charges. </li>
+              <li><strong>Flexi Ticket</strong> - Select a Flexi ticket to modify your travel date at least 8 hours before departure. </li>
+              <li><strong>Earn Rewards</strong> - Refer your friend and get INR 100 in your redBus wallet after they complete their first trip. </li>
+              <li><strong>Booking for Women</strong> - Access exclusive deals for women travellers, view the number of women on your bus, enjoy priority helplines, and find buses preferred by women.</li>
+              <li><strong>Primo Services</strong> - Select top-rated bus operators that offer timely and customer-friendly Primo services.</li>
+              <li><strong>24/7 Customer Support</strong> -Receive 24/7 customer service for any assistance related to bookings.</li>
+              <li><strong>Instant Refund</strong>- Get an instant refund for cancellation or booking-related issues. </li>
+              <li><strong>Live Bus Tracking</strong> - Track your bus in real-time and plan your journey more efficiently.</li>
+            </ul>
+          </div>
+          <h2>Why Choose redRail for Train Ticket Booking?</h2>
+          <p>Below are some of the reasons for train ticket booking on redRail.</p>
+          <div>
+            <ul>
+              <li><strong>An authorised partner of IRCTC</strong>- redRail is an authorised IRCTC partner, providing authentic information. </li>
+              <li><strong>Free cancellation</strong>- Get the freedom to cancel train tickets without paying cancellation charges. </li>
+              <li><strong>Alternate Trip</strong>- Waitlist train ticket will get confirmed, or you will get a 3X refund to book an alternate train or bus. </li>
+              <li><strong>24/7 customer support</strong>- Customer support for redRail is available 24/7 to help you with train bookings.</li>
+            </ul>
+          </div>
+          <h2>How to Book Bus Tickets and Train Tickets Online on redBus?</h2>
+          <p>Below are some simple steps that you can follow when booking train or bus tickets online on redBus.</p>
+          <div>
+            <ul>
+              <li><strong>Step 1:</strong> Visit the redBus website or app.</li>
+              <li><strong>Step 2:</strong> Select your preferred mode of transport, either bus or train. </li>
+              <li><strong>Step 3:</strong> Select your travel date and journey details. </li>
+              <li><strong>Step 4:</strong> Search for your preferred bus or train available on your chosen travel date and route. </li>
+              <li><strong>Step 5:</strong> Select your preferred boarding or dropping points and enter your contact details. </li>
+              <li><strong>Step 7:</strong> Choose from multiple payment options to proceed with the payment process. </li>
+              <li><strong>Step 8:</strong> After the successful payment, you will receive a confirmation of your train or bus bookings on your registered email ID or mobile number. </li>
+            </ul>
+          </div>
+          <h2>Exclusive Offers on redBus</h2>
+          <p>redBus provides exclusive offers and deals on bus and train ticket booking for travellers. Additionally, you can also get festive offers on apps or specific to bus operators. All you need to do is check train and bus booking offers on redBus and apply the coupon code mentioned on the website or app to avail the discount. redBus keeps adding new discounts and offers depending on the seasonality, festivals, and other events.</p>
+         </div>
+        </section>
+
+
+         <section class="booking-reddeals">
+          <div>
+            <h2>Bus Booking redDeals on redBus</h2>
+            <p>Don't miss out on these incredible offers, book your bus tickets now and travel with convenience and affordability. Hurry, grab the best bus booking deals before they're gone!</p>
+          </div>
+          <div class="unbeatable-exclusive-reddeals">
+            <div class="unbeatable-exclusive-reddeals-left">
+              <div>
+                <img src="./resources/bus_logo.svg" height="32" width="48" alt="">
+              </div>
+              <div>
+                <p>Unlock Unbeatable Exclusive redDeals! <span style="color: #c92e10;">20% OFF</span></p>
+                <p>7554 Deals . 3051 Bus Operators . 1122475 Routes</p>
+              </div>
+            </div>
+            <div class="unbeatable-exclusive-reddeals-right">
+              <button>Book now</button>
+            </div>
+          </div>
+         </section>
+
+         <section class="faqs">
+           <h2>FAQs related to Bus Tickets Booking</h2>
+           <div class="faqs-top">
+            <div class="faqs-nav">
+              <button>General</button>
+              <button>Ticket-related</button>
+              <button>Payment</button>
+              <button>Cancellation & Refund</button>
+            </div>
+            <div class="faqs-accordian">
+              <h3>Can I track the location of my booked bus online?</h3>
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></div>
+            </div>
+              <div class="faqs-accordian">
+              <h3>What are the advantages of bus ticket booking with redBus?</h3>
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></div>
+            </div>
+              <div class="faqs-accordian">
+              <h3>Why book bus tickets online on redBus?</h3>
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></div>
+            </div>
+              <div class="faqs-accordian">
+              <h3>Do I need to create an account on the redBus site to book bus ticket?</h3>
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></div>
+            </div>
+              <div class="faqs-accordian">
+              <h3>Does bus booking online cost me more?</h3>
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></div>
+            </div>
+              <div class="faqs-accordian">
+              <h3>How can I get the discounts on the bus booking?</h3>
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></div>
+            </div>
+              <div class="faqs-accordian">
+              <h3>What's New in Bus Booking on redBus?</h3>
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></div>
+            </div>
+              <div class="faqs-accordian">
+              <h3>Can I book a Government bus ticket on redBus?</h3>
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></div>
+            </div>
+           </div>
+         </section>
+      </main>
+
+      <footer class="footer">
+          <div class="footer-container">
+            
+            <div>
+              <div class="faqs-accordian">
+                <h3>Popular Bus Routes</h3>
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></div>
+              </div>
+
+              <div class="faqs-accordian">
+              <h3>Popular Cities</h3>
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></div>
+              </div>
+            
+              <div class="faqs-accordian">
+              <h3>Popular Bus Operators</h3>
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></div>
+              </div>
+
+            </div>
+
+            <div>
+                <div class="about-redbus">
+                  <a href="#">Contact us</a>
+                  <a href="#">Sitemap</a>
+                  <a href="#">Offers</a>
+                  <a href="#">Careers</a>
+                </div>
+                <div class="info">
+                  <a href="#">T&C</a>
+                  <a href="#">Privacy policy</a>
+                  <a href="#">Blog</a>
+                  <a href="#">Bus operator registration</a>
+                  <a href="#">Agent registration</a>
+                  <a href="#">Insurance partner</a>
+                  <a href="#">User agreement</a>
+                  <a href="#">Primo Bus</a>
+                  <a href="#">Bus Timetable</a>
+                  <a href="#">Report Security Issues</a>
+                </div>
+                <div class="global-sites">
+                  <a href="#">India</a>
+                  <a href="#">Singapore</a>
+                  <a href="#">Malaysia</a>
+                  <a href="#">Indonesia</a>
+                  <a href="#">Peru</a>
+                  <a href="#">Colombia</a>
+                  <a href="#">Cambodia</a>
+                  <a href="#">Vietnam</a>
+                </div>
+                <div class="our-partners">
+                  <a href="#">Goibibo Bus</a>
+                  <a href="#">Goibibo Hotels</a>
+                  <a href="#">Makemytrip Hotels</a>
+                </div>
+            </div>
+
+            <div>
+                <img src="./resources/bus_logo.svg" width="66" height="43" alt="">
+                <span>redBus is the world's largest online bus ticket booking service trusted by over 56+ million happy customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile apps for all major routes.</span>
+            </div>
+
+            <div>
+                <p>Ⓒ 2026 MAKEMYTRIP (INDIA) PRIVATE LIMITED. All rights reserved</p>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg>
+                </div>
+            </div>
+            
+
+          </div>
+      </footer>
+    </div>
+  </body>
+</html>
