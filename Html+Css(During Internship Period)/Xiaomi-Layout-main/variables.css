@@ -26,6 +26,7 @@
     --color-border-light: #eeeeee;
     --color-border-medium: #dddddd;
     --color-border-dark: #cccccc;
+    --color-border-semi-dark: rgba(255, 255, 255, 0.15);
     --color-border-test: #111111;
 
     /* Status */
@@ -46,7 +47,7 @@
     --font-size-sup-md: 15px;
     --font-size-lg: 20px;
     --font-size-xl: 24px;
-    --font-size-xxl: 36px;
+    --font-size-xxl: 30px;
     --font-size-xxxl: 48px;
 
     --font-weight-light: 300;

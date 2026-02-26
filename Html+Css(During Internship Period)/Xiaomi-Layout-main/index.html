@@ -1,45 +1,446 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xiaomi Layout - CSS Variables Test</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <link rel="icon" href="./Resources/Xiaomi_logo.svg" />
-</head>
-<body class="site-main">
-      <header class="head-main">
-        <nav class="header">
-          <div class="nav-left">
-            <a href="#"><img src="./Resources//Xiaomi_logo.svg" alt="Xiaomi_logo"></a>
-            <div><a href="#">Store</a></div>
-            <div><a href="#">Phones</a></div>
-            <div><a href="#">Tablets</a></div>
-            <div><a href="#">TV & Smart Home</a></div>
-            <div><a href="#">Smart Watch & Audio</a></div>
-          </div>
-          <div class="nav-right">
-            <div><a href="#">Discover</a></div>
-            <div><a href="#">Support</a></div>
-            <button><img src="./Resources/NavBar/search.svg" alt="search_btn"></button>
-            <button><img src="./Resources/NavBar/cart.svg" alt="cart_btn"></button>
-            <button><img src="./Resources/NavBar/user.svg" alt="profile_btn"></button>
-          </div>
-        </nav>
-      </header>     
-      <main class="main">
-        <div class="carousel-banner">
-            <div class="carousel-banner-img">
-                <img src="./Resources/corosel/Banner-1.jpg" alt="">
-            </div>
-            <div class="carousel-banner-content">
-                <p class="carousel-banner-content-head">Xiaomi QLED TV X Pro 75</p>
-                <p>Theatre-like Immersive Sound At ₹64,999*</p>
-                <p>Pre-Book Now</p>
-                <button>Learn More</button>
-            </div>
+  </head>
+  <body class="site-main">
+    <header class="head-main">
+      <nav class="header">
+        <div class="nav-left">
+          <a href="#"
+            ><img src="./Resources//Xiaomi_logo.svg" alt="Xiaomi_logo"
+          /></a>
+          <div><a href="#">Store</a></div>
+          <div><a href="#">Phones</a></div>
+          <div><a href="#">Tablets</a></div>
+          <div><a href="#">TV & Smart Home</a></div>
+          <div><a href="#">Smart Watch & Audio</a></div>
         </div>
-      </main>
-      <footer class="footer">footer</footer>
-</body>
+        <div class="nav-right">
+          <div><a href="#">Discover</a></div>
+          <div><a href="#">Support</a></div>
+          <button>
+            <img src="./Resources/NavBar/search.svg" alt="search_btn" />
+          </button>
+          <button>
+            <img src="./Resources/NavBar/cart.svg" alt="cart_btn" />
+          </button>
+          <button>
+            <img src="./Resources/NavBar/user.svg" alt="profile_btn" />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="carousel-banner">
+        <div class="carousel-banner-img">
+          <img src="./Resources/corosel/Banner-1.jpg" alt="" />
+        </div>
+        <div class="carousel-banner-content">
+          <p class="carousel-banner-content-head">Xiaomi QLED TV X Pro 75</p>
+          <p>Theatre-like Immersive Sound At ₹64,999*</p>
+          <p>Pre-Book Now</p>
+          <button>Learn More</button>
+        </div>
+        <button class="carousel-banner-left-arrow">
+          <img src="./Resources/corosel/caret-left.svg" alt="left_arrow" />
+        </button>
+        <button class="carousel-banner-right-arrow">
+          <img src="./Resources/corosel/caret-right.svg" alt="right-arrow" />
+        </button>
+      </section>
+
+      <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="featured-product">
+          <div class="featured-product-nav">
+            <button>New Launch</button>
+            <button>Phones</button>
+            <button>Smart TVs</button>
+            <button>Tablets</button>
+            <button>Lifestyle</button>
+          </div>
+          <div class="featured-product-parent">
+            <div class="featured-product-parent">
+              <div class="featured-product-parent-img">
+                <img
+                  src="./Resources/Featured Products/tv_img.jpg"
+                  alt="featured_tv"
+                />
+              </div>
+              <div class="featured-product-parent-content">
+                <h3>Newly Launched Products</h3>
+                <button class="featured-product-parent-content-btn">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="featured-products-card-parent">
+            <div class="featured-products-single-card">
+              <div>
+                <img
+                  src="./Resources/Featured Products/tv_x_pro.webp"
+                  alt="product_logo"
+                />
+              </div>
+              <p class="featured-products-single-card-name">
+                Xiaomi QLED TV X Pro Series Edition
+              </p>
+              <p class="featured-products-single-card-price">
+                <strong> ₹ 69,999</strong> ₹<strike>1,19,999</strike>
+              </p>
+            </div>
+            <div class="featured-products-single-card">
+              <div>
+                <img
+                  src="./Resources/Featured Products/note 15 pro + .webp"
+                  alt="product_logo"
+                />
+              </div>
+              <p class="featured-products-single-card-name">
+                Redmi Note 15 Pro+ 5G
+              </p>
+              <p class="featured-products-single-card-price">
+                <strong> ₹ 69,999</strong> ₹<strike>1,19,999</strike>
+              </p>
+            </div>
+            <div class="featured-products-single-card">
+              <div>
+                <img
+                  src="./Resources/Featured Products/note 15 pro.webp"
+                  alt="product_logo"
+                />
+              </div>
+              <p class="featured-products-single-card-name">
+                Redmi Note 15 Pro 5G
+              </p>
+              <p class="featured-products-single-card-price">
+                <strong> ₹ 69,999</strong> ₹<strike>1,19,999</strike>
+              </p>
+            </div>
+            <div class="featured-products-single-card">
+              <div>
+                <img
+                  src="./Resources/Featured Products/charger.webp"
+                  alt="product_logo"
+                />
+              </div>
+              <p class="featured-products-single-card-name">
+                Xiaomi 45W Mini-GaN PD Charger
+              </p>
+              <p class="featured-products-single-card-price">
+                <strong> ₹ 69,999</strong> ₹<strike>1,19,999</strike>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="exclusive-offers">
+        <h2>Exclusive Offers</h2>
+        <div class="exclusive-offer-card-parent">
+          <div class="exclusive-offers-single-card">
+            <div>
+              <img
+                src="./Resources/Exclusive Offers/Free Spotify.webp"
+                alt="free_spotify_img"
+              />
+            </div>
+            <div>
+              <h3>Free Spotify Premium Standard</h3>
+              <p>Enjoy up to 4 Months of Ad-free Music</p>
+            </div>
+          </div>
+          <div class="exclusive-offers-single-card">
+            <div>
+              <img
+                src="./Resources/Exclusive Offers/New User Zone.webp"
+                alt="New User Zone_img"
+              />
+            </div>
+            <div>
+              <h3>New User Zone</h3>
+              <p>Get the Xiaomi Store App</p>
+            </div>
+          </div>
+          <div class="exclusive-offers-single-card">
+            <div>
+              <img
+                src="./Resources/Exclusive Offers/Xiaomi Exchange.webp"
+                alt="Xiaomi Exchange_img"
+              />
+            </div>
+            <div>
+              <h3>Xiaomi Exchange</h3>
+              <p>Smartest way to upgrade</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="explore-xiaomi">
+        <h2>Explore Xiaomi</h2>
+        <div class="explore-xiaomi-card-parent">
+          <div class="explore-xiaomi-single-card">
+            <div>
+              <img
+                src="./Resources/Explore Xiaomi/Xiaomi HyperOS.webp"
+                alt="Xiaomi HyperOS_img"
+              />
+            </div>
+            <div>
+              <p>Xiaomi HyperOS</p>
+            </div>
+          </div>
+          <div class="explore-xiaomi-single-card">
+            <div>
+              <img
+                src="./Resources/Explore Xiaomi/Xiaomi India.webp"
+                alt="Xiaomi HyperOS_img"
+              />
+            </div>
+            <div>
+              <p>Xiaomi India : 10 Years Of Tomorrow</p>
+            </div>
+          </div>
+          <div class="explore-xiaomi-single-card">
+            <div>
+              <img
+                src="./Resources/Explore Xiaomi/Xiaomi Priority Club.webp"
+                alt="Xiaomi HyperOS_img"
+              />
+            </div>
+            <div>
+              <p>Xiaomi Rewards Club</p>
+            </div>
+          </div>
+          <div class="explore-xiaomi-single-card">
+            <div>
+              <img
+                src="./Resources/Explore Xiaomi/Xiaomi Rewarda.webp"
+                alt="Xiaomi HyperOS_img"
+              />
+            </div>
+            <div>
+              <p>Xiaomi Priority Club</p>
+            </div>
+          </div>
+          <div class="explore-xiaomi-single-card">
+            <div>
+              <img
+                src="./Resources/Explore Xiaomi/Xiaomi x Leica.webp"
+                alt="Xiaomi HyperOS_img"
+              />
+            </div>
+            <div>
+              <p>Xiaomi x Leica</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="xiaomi-support">
+        <h2>Xiaomi Support</h2>
+        <div class="xiaomi-support-card-parent">
+          <div class="xiaomi-support-single-card">
+            <div>
+              <img
+                src="./Resources/All Svg/arrow-u-up-left.svg"
+                alt="free_spotify_img"
+              />
+            </div>
+
+            <div>
+              <h3>Xiaomi Exchange</h3>
+              <p>Save More & Go Green With Your Old Device</p>
+            </div>
+          </div>
+          <div class="xiaomi-support-single-card">
+            <div>
+              <img src="./Resources/Xiaomi_logo.svg" alt="free_spotify_img" />
+            </div>
+
+            <div>
+              <h3>Mi Complete Protec...</h3>
+              <p>Protect Your Device In Less Than ₹2/Day</p>
+            </div>
+          </div>
+
+          <div class="xiaomi-support-single-card">
+            <div>
+              <img
+                src="./Resources/All Svg/map-pin.svg"
+                alt="free_spotify_img"
+              />
+            </div>
+
+            <div>
+              <h3>Service Centers</h3>
+              <p>Right Where You Need Us</p>
+            </div>
+          </div>
+          <div class="xiaomi-support-single-card">
+            <div>
+              <img
+                src="./Resources/All Svg/chats (1).svg"
+                alt="free_spotify_img"
+              />
+            </div>
+
+            <div>
+              <h3>Chat Now</h3>
+              <p>हिंदी / English</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-top">
+          <div class="footer-top-left">
+            <div class="footer-top-left-section">
+              <p>Support</p>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+            </div>
+            <div class="footer-top-left-section">
+              <p>SHOP AND LEARN</p>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+            </div>
+            <div class="footer-top-left-section">
+              <p>RETAIL STORE</p>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+            </div>
+            <div class="footer-top-left-section">
+              <p>ABOUT US</p>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+              <a href="#">Online Help</a>
+            </div>
+          </div>
+
+          <div class="footer-top-right">
+            <p>Follow Mi</p>
+            <div class="social-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#ffffff"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#ffffff"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#ffffff"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="num">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M144,104V64a8,8,0,0,1,16,0V84.69l34.34-34.35a8,8,0,0,1,11.32,11.32L171.32,96H192a8,8,0,0,1,0,16H152A8,8,0,0,1,144,104Zm79.88,79.08A56.26,56.26,0,0,1,168,232C88.6,232,24,167.4,24,88A56.24,56.24,0,0,1,72.92,32.13a16,16,0,0,1,16.62,9.51l21.12,47.15,0,.12A16,16,0,0,1,109.39,104c-.18.27-.37.52-.57.77L88,129.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,223.88,183.08Zm-15.88-2s-.07,0-.11,0h0l-47-21.05-24.35,20.71a6.84,6.84,0,0,1-.74.56,16,16,0,0,1-15.75,1.14c-18.73-9.05-37.4-27.58-46.46-46.11a16,16,0,0,1,1-15.7,6.13,6.13,0,0,1,.57-.77L96,95.15l-21-47a.61.61,0,0,1,0-.12A40.2,40.2,0,0,0,40,88,128.14,128.14,0,0,0,168,216,40.21,40.21,0,0,0,208,181.07Z"></path></svg>
+              <p>1800 103 6286</p>
+            </div>
+            <section class="stay-touch">
+              <p>Let`s stay in touch</p>
+              <input type="text" placeholder="Enter email address" />
+            </section>
+
+            <section class="google-play">
+              <div class="scan">
+                <img src="./Resources/footer/scanner.webp" alt="">
+                <div class="scan-right">
+                  <h3>Get mi store app</h3>
+                  <span class="scan-right-first-para">Scan for our up-to-date information for better shopping experience</span>
+                </div>
+              </div>
+              <div class="google-play-bottom"><img src="./Resources/footer/google-play-icon.webp" alt=""> <span>Download on Google Play</span></div>
+            </section>
+          </div>
+        </div>
+        <div class="cpyright">
+          <div>Copyright © 2010 - 2026 Xiaomi. All Rights Reserved   <a href="#">Sitemap</a></div>
+          <div class="cpyright-right">
+            
+            <p>India / English</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
